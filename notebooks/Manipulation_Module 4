@@ -1,0 +1,618 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f7b1e200-9923-48a4-94ea-8caba3309de8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5f9cab3f-f98d-47ce-b1b5-fbffc7b9cfa0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "some string\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 1\n",
+    "b = 2\n",
+    "c  = a + b\n",
+    "print(c)\n",
+    "\n",
+    "d = \" some \"   \"string    \"\n",
+    "print(d.strip())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "521afaec-dd32-4354-bbc4-97cb68645b6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 5, 9]\n",
+      "{1, 2, 3, 4, 5, 7, 8}\n",
+      "(56, 7, 8, 2, 4, 5, 88, 90, 1, 5, 4)\n",
+      "{'id': [1, 4, 5, 6, 9], 'name': ['Monu', 'Sonu', 'yash', 'girl', 'kkok']}\n",
+      "[1, 4, 5, 6, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#data Structure\n",
+    "#list, set, tuple, dict\n",
+    "l = [1,4,5,7,9,0]\n",
+    "\n",
+    "print(l[::2])\n",
+    "#set\n",
+    "data  = {1,3,5,7,8,4,3,2,1}\n",
+    "print(set(data))\n",
+    "\n",
+    "tup_data = (56,7,8,2,4,5,88,90,1,5,4)\n",
+    "print(tuple(tup_data))\n",
+    "\n",
+    "dic_value = {\"id\" : [1,4,5,6,9], \"name\" :[\"Monu\", \"Sonu\", \"yash\", \"girl\", \"kkok\"]}\n",
+    "print(dic_value)\n",
+    "print(dic_value.get('id'))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "d28d0187-c3ff-4867-905f-9618c0c1e794",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = 10\n",
+    "for i in range(n):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "45c3470e-fa23-4f32-a3c0-5a4d5a6aa63d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "6\n",
+      "7\n",
+      "3\n",
+      "4\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "0 1\n",
+      "1 6\n",
+      "2 7\n",
+      "3 3\n",
+      "4 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = [1,6,7,3,4]\n",
+    "for i in range(0, len(n)):\n",
+    "    print(n[i])\n",
+    "for elt in range(len(n)):\n",
+    "    print(elt)\n",
+    "for i, elt in enumerate(n):\n",
+    "    print(i, elt)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "2d3b3d45-dea2-45e4-8399-45c636f50ccf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "id\n",
+      "name\n",
+      " the key id, with the value [1, 4, 5, 6, 9]\n",
+      " the key name, with the value ['Monu', 'Sonu', 'yash', 'girl', 'kkok']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#loop the element in dictonary\n",
+    "dic_value = {\"id\" : [1,4,5,6,9], \"name\" :[\"Monu\", \"Sonu\", \"yash\", \"girl\", \"kkok\"]}\n",
+    "\n",
+    "for i in dic_value:\n",
+    "    print(i)\n",
+    "for k,v in dic_value.items():\n",
+    "    print(f\" the key {k}, with the value {v}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "54cbe041-2b7e-45c5-847f-01ab7cd4b8f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100 not defined properly\n",
+      "42 Adult\n",
+      "78 old\n",
+      "12 not an adult\n"
+     ]
+    }
+   ],
+   "source": [
+    "customer_info = [\n",
+    "    {'name': 'customer_1', 'id': 1, 'age': 100},\n",
+    "    {'name': 'customer_2', 'id': 2, 'age': 42},\n",
+    "    {'name': 'customer_3', 'id': 3, 'age': 78},\n",
+    "    {'name': 'customer_4', 'id': 4, 'age': 12}\n",
+    "]\n",
+    "def get_bucket(customer):\n",
+    "    customer_age = customer['age']\n",
+    "    if customer_age < 18 :\n",
+    "        return \"not an adult\"\n",
+    "    elif customer_age > 18 and customer_age <= 60:\n",
+    "        return \"Adult\"\n",
+    "    elif customer_age > 61 and customer_age <= 90:\n",
+    "        return \"old\"\n",
+    "    else : \n",
+    "        return \"not defined properly\"\n",
+    "\n",
+    "for customer in customer_info:\n",
+    "    print(customer['age'] , get_bucket(customer))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "b65a928d-a9ab-4ade-88aa-97b9e6ad0413",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#data exctrction\n",
+    "class extractor:\n",
+    "    def __init__(self, some_value):\n",
+    "        self.some_value = some_value\n",
+    "\n",
+    "    def get_connection(self):\n",
+    "        pass\n",
+    "\n",
+    "    def close_connection(self):\n",
+    "        pass\n",
+    "#Object\n",
+    "de_object = extractor(10)\n",
+    "print(de_object.some_value)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "0d9087c7-9002-4341-8217-33d4afd0b8e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Data is extracted  for Customer_pipeline\n",
+      "transforming the data Customer_pipeline\n",
+      "loading the data for Customer_pipeline\n",
+      "########################\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Hello world\n",
+      "Data is extracted  for orders_pipeline\n",
+      "transforming the data orders_pipeline\n",
+      "loading the data for orders_pipeline\n"
+     ]
+    }
+   ],
+   "source": [
+    "#ETL pipeline\n",
+    "\n",
+    "class Pipeline:\n",
+    "    def __init__(self, pipeline_type):\n",
+    "        self.pipeline_type = pipeline_type\n",
+    "\n",
+    "    def extract(self):\n",
+    "        for i in  self.pipeline_type:\n",
+    "            print(\"Hello world\")\n",
+    "        print(f\"Data is extracted  for {self.pipeline_type}\")\n",
+    "\n",
+    "\n",
+    "    def transform(self):\n",
+    "        print(f\"transforming the data {self.pipeline_type}\")\n",
+    "\n",
+    "\n",
+    "    def load(self):\n",
+    "        print(f\"loading the data for {self.pipeline_type}\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "    def run(self):\n",
+    "        self.extract()\n",
+    "        self.transform()\n",
+    "        self.load()\n",
+    "\n",
+    "\n",
+    "p1 = Pipeline(\"Customer_pipeline\")\n",
+    "p2 = Pipeline(\"orders_pipeline\")\n",
+    "\n",
+    "p1.run()\n",
+    "print(\"########################\")\n",
+    "p2.run()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "641aa1d4-5780-46d4-8db0-07c0e9b9cae8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied: datetime in /opt/conda/lib/python3.11/site-packages (6.0)\n",
+      "Requirement already satisfied: zope.interface in /opt/conda/lib/python3.11/site-packages (from datetime) (8.5)\n",
+      "Requirement already satisfied: pytz in /opt/conda/lib/python3.11/site-packages (from datetime) (2023.3.post1)\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
+   "source": [
+    "pip install datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "1eee2bbf-63d1-4297-bc92-a94b270a8af4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2026-06-01\n"
+     ]
+    }
+   ],
+   "source": [
+    "#datetime\n",
+    "\n",
+    "from datetime import datetime\n",
+    "print(datetime.now().strftime('%Y-%m-%d'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "1d589729-f6d2-4d26-83b1-8c90481b6cb8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Error: Index 10 is out of the range for the list\n",
+      "Execution error\n"
+     ]
+    }
+   ],
+   "source": [
+    "l = [1,3,4,6,7]\n",
+    "index = 10\n",
+    "\n",
+    "try : \n",
+    "    element = l[index]\n",
+    "    print(f\"Error : Index {index} is {element}\")\n",
+    "except IndexError:\n",
+    "    print(f\"Error: Index {index} is out of the range for the list\")\n",
+    "finally:\n",
+    "    print(\"Execution error\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "cb9b42ac-b3b6-48fe-ae1e-7bb0c951d9dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[{'customer_id': 'C001', 'product': 'laptop', 'quantity': 2, 'price': 1200.0, 'revenue': 2400.0}, {'customer_id': 'C002', 'product': 'mouse', 'quantity': 1, 'price': 25.99, 'revenue': 25.99}, {'customer_id': 'C001', 'product': 'keyboard', 'quantity': 1, 'price': 89.5, 'revenue': 89.5}, {'customer_id': 'C003', 'product': 'monitor', 'quantity': 1, 'price': 299.99, 'revenue': 299.99}, {'customer_id': 'C002', 'product': 'laptop', 'quantity': 1, 'price': 1200.0, 'revenue': 1200.0}, {'customer_id': 'C004', 'product': 'headphones', 'quantity': 3, 'price': 79.99, 'revenue': 239.96999999999997}, {'customer_id': 'C001', 'product': 'webcam', 'quantity': 1, 'price': 45.0, 'revenue': 45.0}, {'customer_id': 'C003', 'product': 'mouse', 'quantity': 2, 'price': 25.99, 'revenue': 51.98}, {'customer_id': 'C002', 'product': 'speaker', 'quantity': 1, 'price': 150.0, 'revenue': 150.0}, {'customer_id': 'C005', 'product': 'tablet', 'quantity': 1, 'price': 399.99, 'revenue': 399.99}]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Customer Order Analysis: Write python code that processes a list of customer orders to calculate the total revenue and find top 3 the most frequent customer.\n",
+    "orders = [\n",
+    "    {\"customer_id\": \"C001\", \"product\": \"laptop\", \"quantity\": 2, \"price\": 1200.00},\n",
+    "    {\"customer_id\": \"C002\", \"product\": \"mouse\", \"quantity\": 1, \"price\": 25.99},\n",
+    "    {\"customer_id\": \"C001\", \"product\": \"keyboard\", \"quantity\": 1, \"price\": 89.50},\n",
+    "    {\"customer_id\": \"C003\", \"product\": \"monitor\", \"quantity\": 1, \"price\": 299.99},\n",
+    "    {\"customer_id\": \"C002\", \"product\": \"laptop\", \"quantity\": 1, \"price\": 1200.00},\n",
+    "    {\"customer_id\": \"C004\", \"product\": \"headphones\", \"quantity\": 3, \"price\": 79.99},\n",
+    "    {\"customer_id\": \"C001\", \"product\": \"webcam\", \"quantity\": 1, \"price\": 45.00},\n",
+    "    {\"customer_id\": \"C003\", \"product\": \"mouse\", \"quantity\": 2, \"price\": 25.99},\n",
+    "    {\"customer_id\": \"C002\", \"product\": \"speaker\", \"quantity\": 1, \"price\": 150.00},\n",
+    "    {\"customer_id\": \"C005\", \"product\": \"tablet\", \"quantity\": 1, \"price\": 399.99}\n",
+    "]\n",
+    "for order in orders:\n",
+    "    order[\"revenue\"] = order['quantity'] * order[\"price\"]\n",
+    "print(orders)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "42c5a3dc-8170-45d6-8754-6caaf5a1f9cc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Valid Emails:\n",
+      "{'alice.brown@company.com', 'test@example.org', 'another@test.io', 'jane.smith@email.co.uk', 'john.doe@company.com', 'bob@gmail.com', 'valid.user@site.net'}\n",
+      "\n",
+      "Invalid Emails:\n",
+      "['invalid-email', 'missing@domain', '@nodomain.com', 'no-at-symbol.com']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Data Quality Checker: Write a Python function that takes a list of email addresses and returns a dictionary with two keys: valid_emails (list) and invalid_emails (list).\n",
+    "\n",
+    "email_list = [\n",
+    "    \"john.doe@company.com\",\n",
+    "    \"jane.smith@email.co.uk\",\n",
+    "    \"invalid-email\",\n",
+    "    \"bob@gmail.com\",\n",
+    "    \"alice.brown@company.com\",\n",
+    "    \"john.doe@company.com\",  # duplicate\n",
+    "    \"missing@domain\",\n",
+    "    \"test@example.org\",\n",
+    "    \"@nodomain.com\",\n",
+    "    \"jane.smith@email.co.uk\",  # duplicate\n",
+    "    \"valid.user@site.net\",\n",
+    "    \"no-at-symbol.com\",\n",
+    "    \"another@test.io\"\n",
+    "]\n",
+    "vaild_emails = []\n",
+    "invalid_emails = []\n",
+    "for email in email_list:\n",
+    "    if '@' not in email:\n",
+    "        invalid_emails.append(email)\n",
+    "        continue\n",
+    "    parts = email.split(\"@\")\n",
+    "\n",
+    "    if len(parts[0]) == 0:\n",
+    "        invalid_emails.append(email)\n",
+    "        continue\n",
+    "\n",
+    "    if '.' not in parts[1]:\n",
+    "        invalid_emails.append(email)\n",
+    "        continue\n",
+    "\n",
+    "    vaild_emails.append(email)\n",
+    "\n",
+    "#remove duplicates\n",
+    "print(\"\\nValid Emails:\")\n",
+    "vaild_emails = set(vaild_emails)\n",
+    "print(vaild_emails)\n",
+    "\n",
+    "\n",
+    "print(\"\\nInvalid Emails:\")\n",
+    "print(invalid_emails)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "1256aa9f-1caf-46fe-bde0-f1f6e093081b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Sales Rep: Alice Johnson\n",
+      "Sales Amounts: [15000, 18000, 22000, 16000, 19000, 21000, 23000]\n",
+      "Average Sales: 19142.86\n",
+      "Target Not Achieved\n",
+      "\n",
+      "Sales Rep: Bob Smith\n",
+      "Sales Amounts: [12000, 14000, 11000, 13000, 15000, 16000]\n",
+      "Average Sales: 13500.00\n",
+      "Target Not Achieved\n",
+      "\n",
+      "Sales Rep: Carol Davis\n",
+      "Sales Amounts: [25000, 28000, 30000, 27000, 32000, 29000]\n",
+      "Average Sales: 28500.00\n",
+      "Target Achieved\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Sales Performance Tracker: Create a class called SalesRep that stores a representative’s name and a list of their sales amounts.\n",
+    "\n",
+    "#Include methods to add sales amounts, calculate average sales, and determine if they hit a target (parameter).\n",
+    "\n",
+    "# SalesRep Class\n",
+    "\n",
+    "class SalesRep:\n",
+    "\n",
+    "    def __init__(self, name, sales=None):\n",
+    "        self.name = name\n",
+    "        self.sales = sales if sales else []\n",
+    "\n",
+    "    # Add a new sales amount\n",
+    "    def add_sale(self, amount):\n",
+    "        self.sales.append(amount)\n",
+    "\n",
+    "    # Calculate average sales\n",
+    "    def average_sales(self):\n",
+    "        if len(self.sales) == 0:\n",
+    "            return 0\n",
+    "        return sum(self.sales) / len(self.sales)\n",
+    "\n",
+    "    # Check if average sales hit target\n",
+    "    def hit_target(self, target):\n",
+    "        return self.average_sales() >= target\n",
+    "\n",
+    "    # Display sales rep details\n",
+    "    def display_info(self):\n",
+    "        print(f\"\\nSales Rep: {self.name}\")\n",
+    "        print(f\"Sales Amounts: {self.sales}\")\n",
+    "        print(f\"Average Sales: {self.average_sales():.2f}\")\n",
+    "\n",
+    "\n",
+    "# Sample data\n",
+    "sales_data = {\n",
+    "    \"Alice Johnson\": [15000, 18000, 22000, 16000, 19000, 21000],\n",
+    "    \"Bob Smith\": [12000, 14000, 11000, 13000, 15000, 16000],\n",
+    "    \"Carol Davis\": [25000, 28000, 30000, 27000, 32000, 29000]\n",
+    "}\n",
+    "\n",
+    "# Create objects\n",
+    "sales_reps = []\n",
+    "\n",
+    "for name, sales in sales_data.items():\n",
+    "    rep = SalesRep(name, sales)\n",
+    "    sales_reps.append(rep)\n",
+    "\n",
+    "# Add a new sale\n",
+    "sales_reps[0].add_sale(23000)\n",
+    "\n",
+    "# Set target\n",
+    "target = 20000\n",
+    "\n",
+    "# Display results\n",
+    "for rep in sales_reps:\n",
+    "    rep.display_info()\n",
+    "\n",
+    "    if rep.hit_target(target):\n",
+    "        print(\"Target Achieved\")\n",
+    "    else:\n",
+    "        print(\"Target Not Achieved\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65c0343e-da58-4b0c-9baa-b00a4b058767",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,12 @@
+﻿date,region,product,sales
+10-03-2026,North,Laptop,1200
+10-03-2026,south,Phone,800
+March 10 2026,East,Tablet,400
+11-03-2026,North,Phone,900
+11-03-2026,West,Laptop,1500
+(missing),South,Tablet,300
+12-03-2026,EAST,Phone,700
+12-03-2026,West,Laptop,1300
+12-03-2026,North,(missing),1000
+12-03-2026,South,Phone,NAN
+12-03-2026,south,Tablet,NAN
