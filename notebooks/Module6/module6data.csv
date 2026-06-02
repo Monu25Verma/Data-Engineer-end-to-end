@@ -1,0 +1,26 @@
+﻿customer_id,customer_name,gender,age,product,purschase_amount
+1,Aarav Sharma,male,45,AquaGlow Water Bottle,499
+2,Priya Patel,female,12,SmartFit Fitness Band,"2,999"
+4,Rohan Verma,male,89,EcoFresh Air Purifier,"8,499"
+6,Neha Gupta,female,33,TurboCharge Power Bank,"1,799"
+5,Karan Singh,male,12,FlexiGrip Phone Holder,349
+6,Ananya Mehta,female,90,UltraSoft Pillow,899
+7,Vivek Kumar,male,45,BrightBeam LED Lamp,"1,299"
+8,Sneha Joshi,female,32,QuickBrew Coffee Maker,"3,999"
+9,Rahul Malhotra,male,67,SonicWave Bluetooth Speaker,"2,499"
+10,Pooja Nair,female,44,PureBlend Mixer Grinder,"4,799"
+11,Aditya Kapoor,male,22,CoolMist Humidifier,na
+12,Kavya Iyer,female,12,SecureLock Smart Padlock,"1,099"
+13,Manish Yadav,male,31,SwiftCharge USB-C Cable,299
+14,Divya Reddy,female,53,ComfortPro Office Chair,"9,999"
+15,Arjun Desai,other,33,FreshKeep Food Container,699
+16,Meera Shah,female,22,SkyView Drone Camera,"24,999"
+17,Saurabh Mishra,male,55,ActiveRun Sports Shoes,"3,499"
+18,Nisha Agarwal,female,66,CrystalSound Earbuds,"1,999"
+19,Akash Jain,male,33,HomeGuard Security Camera,"5,499"
+20,Ritu Chawla,female,22,TravelEase Backpack,"1,499"
+21,Varun Bansal,male,23,PowerMax Extension Board,na
+22,Simran Kaur,female,45,SmartTemp Electric Kettle,"1,299"
+23,Deepak Saxena,male,21,VisionPlus Monitor,"12,999"
+24,Tanvi Kulkarni,other,46,CleanSweep Robot Vacuum,"18,999"
+25,Harsh Vora,male,44,,na
